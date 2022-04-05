@@ -1,0 +1,36 @@
+-para crear mi repo-
+1.1 creo un repositorio en github
+1.2 git init (inicializa un repositorio vacio en la carpeta)
+2. git remote add origin *link del repo (SSH)* (nos conecta ese repositorio vacio con nuestro repositorio online(de github, bitbucket, etc))
+
+-para aniadir/modificar/borrar archivos del repositorio-
+1. git add . (selecciona todas las modificaciones de archivos dentro de la carpeta)
+2. git commit -m "comentario" (agrega un breve comentario de los cambios)
+3. git push origin rama(master, develop, etc) (pushea esos cambios seleccionados con el add y el commit a mi repositorio online)
+
+-para clonar/descargar version mas nueva de un repositorio-
+1. git clone *link del repo* (clona el repositorio en una carpeta dentro de nuestr a PC)
+2. git pull (trae la version mas nueva del respositorio ya clonado o linkeado)
+
+
+RAMAS:
+
+MASTER ---> rama final donde dentro de un proyecto estan todos los cambios ya testeados y aprobados.
+
+DEV/DEVELOP ---> rama con los cambios del sprint sin ser aprobadas.
+
+SPRINT, CAMBIOS, ETC ---> ramas con los diferentes cambios que se van agragando al proyecto.
+
+Flujo de las ramas:
+
+CAMBIOS --haber hecho los cambios y haberlos testeado en mi PC-->DEVELOP--los testea y los aprueba el resto del equipo-->MASTER--rama final.
+
+-git checkout *nombre de rama* (me muevo a la rama que escribi)
+-git checkout -b *nombre de rama* (me crea una rama)
+
+Hay cambios en la rama develop y yo estoy en una rama de sprint en base a un develop anterior:
+1. guardo mis cambios en la rama (add . y commit).
+2. git checkout develop (cambio a develop).
+3. git pull (me trae la version ams nueva de develop).
+4. git checkout sprint (vuelvo a la rama de sprint).
+5. git merge develop (me mete los cambios de develop en mi rama) y soluiciono conflictos.

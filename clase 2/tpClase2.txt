@@ -1,0 +1,8 @@
+TP clase 2:
+- hacer un array de objetos de personajes, series, peliculas, libros, etc(tiene que contener id, nombre, tipo y edad/anio lanzamiento).
+- Mostrar por consola todo el array.
+- Hacer una busqueda por id con el html y mostrar el objeto encontrado por consola.
+- Hacer un nuevo array solo con los nombres de los objetos y mostrar por consola.
+- Hacer un promedio de edades/anios.
+- Hacer un nuevo array solo con los objetos de cierto tipo(especie = alien o genero = terror, etc).
+-IMPORTANTE crear y subirlo a un repositorio de github.

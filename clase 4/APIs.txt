@@ -1,0 +1,21 @@
+API => Application Program Interface
+API REST
+
+Status: 
+200 -> OK
+300 -> OK + en cache
+400 -> Errores en la peticion
+401 -> Unauthorized (no estas autorizado para realizar la peticion)
+404 -> not found (la url no existe)
+500 -> Errores del servidor
+
+https://http.cat/
+
+Diferentes tipos de peticiones HTTP:
+GET(trae informacion), POST(crea nueva informacion), PUT(actualiza informacion), DELETE(borra informacion)
+SELECT, INSERT INTO, UPDATE, DELETE
+
+Envio de datos por URL:
+/personajes todos los personajes
+/personajes/1 personaje con id 1
+/personajes?id=1
