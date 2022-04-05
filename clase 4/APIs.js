@@ -37,7 +37,7 @@ const start = async () => {
 
 
 const filtrarPorEstado = async () =>{
-    let tipoFiltro =document.getElementById('status').value;
+    const tipoFiltro =document.getElementById('status').value;
     let atributo ='status'; 
     if(tipoFiltro ==='todos'){
         atributo = '';    
