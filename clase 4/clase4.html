@@ -13,11 +13,11 @@
             <div class="col-6">
                 <form>
                     <div class="mb-3">
-                        <label for="id" class="form-label">Id</label>
-                        <input type="number" class="form-control" id="id">
+                        <label for="id" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name">
                     </div>
                     <div class="d-grid gap-2">
-                    <button class="btn btn-info text-white" onclick="searchById()" type="button">Buscar</button>
+                    <button class="btn btn-info text-white" onclick="searchByName()" type="button">Buscar</button>
                     </div>
                 </form>
             </div>
@@ -28,7 +28,7 @@
                         <select name="status" id="status" onchange="filtrarPorEstado()" class="form-control">
                             <option value="alive">Alive</option>
                             <option value="dead">Dead</option>
-                            <option value="tnknown">Unknown</option>
+                            <option value="unknown">Unknown</option>
                             <option value="todos" default>Todos</option>
 
                         </select>
