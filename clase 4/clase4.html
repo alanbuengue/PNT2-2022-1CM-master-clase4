@@ -10,32 +10,37 @@
 <body class="bg-dark text-white">
     <div class="container mt-4">
         <div class="row justify-content-center">
-            <div class="col-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="id" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="d-grid gap-2">
-                    <button class="btn btn-info text-white" onclick="searchByName()" type="button">Buscar</button>
-                    </div>
-                </form>
+            <div class="col-4">                
+                <div class="mb-3">
+                    <label for="id" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                              
             </div>
-            <div class="col-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="id" class="form-label">Filtro de estado</label>
-                        <select name="status" id="status" onchange="filtrarPorEstado()" class="form-control">
-                            <option value="alive">Alive</option>
-                            <option value="dead">Dead</option>
-                            <option value="unknown">Unknown</option>
-                            <option value="todos" default>Todos</option>
-
-                        </select>
-                    </div>
-                   
-                </form>
+            <div class="col-4">                
+                <div class="mb-3">
+                    <label for="id" class="form-label">Estado</label>
+                    <select name="status" id="status" class="form-control">
+                        <option value="alive">Alive</option>
+                        <option value="dead">Dead</option>
+                        <option value="unknown">Unknown</option>
+                        <option value="todos" selected>Todos</option>
+                    </select>
+                </div>
             </div>
+            <div class="col-4">                
+                <div class="mb-3">
+                    <label for="id" class="form-label">Especie</label>
+                    <select name="species" id="species" class="form-control">
+                        <option value="human">Human</option>
+                        <option value="humanoid">humanoid</option>                        
+                        <option value="todos" selected>Todos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-grid col-4">
+                <button class="btn btn-info text-white" onclick="search()" type="button">Buscar</button>
+            </div>  
         </div>
         <div id="cards" class="row mt-4 text-black">
          </div>
